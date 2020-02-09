@@ -1,0 +1,49 @@
+
+    
+
+    // before(function(done) {
+    //     request(app)
+    //       .post('/user/login')
+    //       .send({ _id: user1._id, password: user1.password })
+    //       .end(function(err, res) {
+    //         token = res.body.token; // Or something
+    //         done();
+    //       });
+    //   });
+
+    // describe('#GET /api/products', () => {//requesty w supertest jest synchroniczny http request sa asynchroniczne 
+    //     it('check if token is allowing access to routes', (done) => { //czeka az test sie wykona 
+    //         request(app)
+    //         .set("Authorization", "Bearer " + token)
+    //         .get('/api/products').end((err, res) => {
+    //             expect(res.statusCode).to.equal(200);
+    //             expect(res.body).to.be.an('array');
+    //             expect(res.body).to.be.empty;
+    //             done();
+    //         })
+    //     })
+    // })
+
+    // describe('#POST /api/tasks', () => {
+    //     it('should add task and return json', (done) => { 
+    //         request(app).post('/api/tasks')
+    //             .send({title: 'new task', description: 'some test'})
+    //             .end((err, res) => {
+    //                 // expect(res.statusCode).to.equal(404);
+    //                 // done();
+    //                 expect(res.statusCode).to.equal(200);
+    //                 expect(res.body).to.be.an('object');
+    //                 expect(res.body).to.have.all.keys(['_id', 'title', '__v', 'createdAt', 'description', 'status', 'updatedAt']);
+    //                 done();
+    //             })
+    //         })
+    //     })
+
+
+
+    TOKEN MOCHA 
+    let token ='';
+    let result = res.body.token;
+    token = result;
+    console.log(`AAAAAAAAAAAAA
+    AAAAAAAAAAAAAAAAAA${token}`);
